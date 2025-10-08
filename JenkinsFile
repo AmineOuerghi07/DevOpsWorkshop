@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/AmineOuerghi07/DevOpsWorkshop.git'
+                git branch: 'main'
+                    url: 'https://github.com/AmineOuerghi07/DevOpsWorkshop.git'
             }
         }
         stage('Build') {
